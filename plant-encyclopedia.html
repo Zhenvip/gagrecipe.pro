@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>식물 도감 완전판 | 로블록스 그로우 어 가든 모든 식물 정보 2024</title>
+    <meta name="description" content="로블록스 그로우 어 가든 식물 도감 완전판! 토마토부터 희귀 작물까지 총 12종 식물의 성장 시간, 수익률, 재배 팁을 상세히 안내. 필터링과 정렬 기능으로 원하는 정보를 빠르게 찾아보세요. 2024년 최신 업데이트 반영.">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="assets/css/enhanced-hierarchy.css">
+    
+    <!-- Structured Data for Plant Encyclopedia -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "식물 도감",
+        "description": "로블록스 그로우 어 가든 모든 식물 정보",
+        "url": "https://gagrecipe.pro/plant-encyclopedia.html",
+        "breadcrumb": {
+            "@type": "BreadcrumbList",
+            "itemListElement": [{
+                "@type": "ListItem",
+                "position": 1,
+                "name": "홈",
+                "item": "https://gagrecipe.pro/"
+            }, {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "식물 도감",
+                "item": "https://gagrecipe.pro/plant-encyclopedia.html"
+            }]
+        }
+    }
+    </script>
+    
+    <!-- Product Schema for Plants -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ItemList",
+        "name": "로블록스 그로우 어 가든 식물 목록",
+        "description": "게임 내 모든 식물의 상세 정보",
+        "itemListElement": [{
+            "@type": "Product",
+            "name": "토마토",
+            "description": "높은 수익률을 자랑하는 인기 작물",
+            "category": "고급 작물",
+            "offers": {
+                "@type": "Offer",
+                "price": "5",
+                "priceCurrency": "COIN"
+            }
+        }, {
+            "@type": "Product", 
+            "name": "당근",
+            "description": "초보자에게 가장 추천하는 기본 작물",
+            "category": "기본 작물",
+            "offers": {
+                "@type": "Offer",
+                "price": "2", 
+                "priceCurrency": "COIN"
+            }
+        }]
+    }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav container">
+            <a href="/" class="logo">GAG 가이드</a>
+            <ul class="nav-menu">
+                <li><a href="/" class="nav-link">홈페이지</a></li>
+                <li><a href="beginner-guide.html" class="nav-link">초보자 가이드</a></li>
+                <li><a href="plant-encyclopedia.html" class="nav-link active">식물 도감</a></li>
+                <li><a href="items-tools.html" class="nav-link">아이템 & 도구</a></li>
+                <li><a href="tips-strategies.html" class="nav-link">팁 & 전략</a></li>
+                <li><a href="updates-news.html" class="nav-link">업데이트 & 뉴스</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" aria-label="테마 전환">🌙</button>
+                <button class="nav-toggle" aria-label="메뉴 전환">☰</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        <section class="hero-section">
+            <div class="container">
+                <h1 class="hero-title">식물 도감 📚</h1>
+                <p class="hero-subtitle">그로우 어 가든의 모든 식물 정보를 한 눈에 확인하세요</p>
+                <div class="hero-actions">
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number">12</div>
+                            <div class="stat-label">식물 종류</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">카테고리</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">완성도</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="ad-container">
+            <div class="ad-banner">AdSense 광고 위치 - 상단 배너</div>
+        </div>
+
+        <div class="container">
+            <section class="search-section mb-4">
+                <div class="search-container">
+                    <input type="text" class="search-input" placeholder="식물 이름을 검색하세요... (예: 토마토, 당근, 딸기)">
+                </div>
+            </section>
+
+            <section class="plant-categories mb-4">
+                <h2>식물 카테고리</h2>
+                <div class="category-tabs">
+                    <button class="category-tab active" data-category="all">전체</button>
+                    <button class="category-tab" data-category="basic">기본 작물</button>
+                    <button class="category-tab" data-category="advanced">고급 작물</button>
+                    <button class="category-tab" data-category="rare">희귀 작물</button>
+                    <button class="category-tab" data-category="seasonal">계절 작물</button>
+                </div>
+            </section>
+
+            <section class="filter-sort mb-4">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="sort-select">정렬 기준:</label>
+                        <select id="sort-select" class="form-select">
+                            <option value="name">이름순</option>
+                            <option value="price-low">가격 낮은순</option>
+                            <option value="price-high">가격 높은순</option>
+                            <option value="time-fast">성장 빠른순</option>
+                            <option value="profit-high">수익률 높은순</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="level-filter">필요 레벨:</label>
+                        <select id="level-filter" class="form-select">
+                            <option value="all">모든 레벨</option>
+                            <option value="1-5">레벨 1-5</option>
+                            <option value="6-15">레벨 6-15</option>
+                            <option value="16-30">레벨 16-30</option>
+                            <option value="30+">레벨 30+</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <section class="plants-grid" id="plants-container">
+                <!-- 기본 작물 섹션 -->
+                <div id="basic-plants" class="plants-section-header">
+                    <h3>기본 작물</h3>
+                </div>
+                <!-- 기본 작물 -->
+                <div class="plant-card" data-category="basic" data-level="1" data-price="2" data-time="30" data-profit="400">
+                    <div class="plant-icon">🥕</div>
+                    <div class="plant-header">
+                        <h3>당근</h3>
+                        <span class="plant-level">레벨 1</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 2코인</div>
+                        <div class="stat">⏰ 시간: 30분</div>
+                        <div class="stat">💎 판매: 8-10코인</div>
+                        <div class="stat profit">📈 수익률: 300-400%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>초보자에게 가장 추천하는 기본 작물입니다. 빠른 성장과 안정적인 수익을 보장합니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>물을 자주 줄 필요가 있음</li>
+                            <li>비료 사용 시 15분으로 단축</li>
+                            <li>대량 재배에 적합</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plant-card" data-category="basic" data-level="3" data-price="3" data-time="45" data-profit="400">
+                    <div class="plant-icon">🌽</div>
+                    <div class="plant-header">
+                        <h3>옥수수</h3>
+                        <span class="plant-level">레벨 3</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 3코인</div>
+                        <div class="stat">⏰ 시간: 45분</div>
+                        <div class="stat">💎 판매: 12-15코인</div>
+                        <div class="stat profit">📈 수익률: 300-400%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>당근 다음으로 추천하는 안정적인 작물입니다. 조금 더 오래 걸리지만 더 높은 수익을 제공합니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>물 주기 간격이 당근보다 길음</li>
+                            <li>스프링클러와 궁합이 좋음</li>
+                            <li>중급자 전환 시점에 추천</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plant-card" data-category="basic" data-level="2" data-price="2" data-time="40" data-profit="350">
+                    <div class="plant-icon">🥔</div>
+                    <div class="plant-header">
+                        <h3>감자</h3>
+                        <span class="plant-level">레벨 2</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 2코인</div>
+                        <div class="stat">⏰ 시간: 40분</div>
+                        <div class="stat">💎 판매: 7-9코인</div>
+                        <div class="stat profit">📈 수익률: 250-350%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>당근과 비슷하지만 조금 더 오래 걸리는 기본 작물입니다. 초보자 연습용으로 좋습니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>당근 대신 선택할 수 있는 대안</li>
+                            <li>수익률이 약간 낮지만 안정적</li>
+                            <li>대량 생산에 적합</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 고급 작물 -->
+                <div class="plant-card" data-category="advanced" data-level="8" data-price="5" data-time="45" data-profit="500">
+                    <div class="plant-icon">🍅</div>
+                    <div class="plant-header">
+                        <h3>토마토</h3>
+                        <span class="plant-level">레벨 8</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 5코인</div>
+                        <div class="stat">⏰ 시간: 45분</div>
+                        <div class="stat">💎 판매: 25-30코인</div>
+                        <div class="stat profit">📈 수익률: 400-500%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>높은 수익률을 자랑하는 인기 작물입니다. 중급자부터 시작하기 좋은 고수익 작물입니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>초기 투자비용이 높음</li>
+                            <li>비료 사용 시 매우 높은 수익</li>
+                            <li>스프링클러 필수 권장</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plant-card" data-category="advanced" data-level="12" data-price="8" data-time="60" data-profit="450">
+                    <div class="plant-icon">🥬</div>
+                    <div class="plant-header">
+                        <h3>양배추</h3>
+                        <span class="plant-level">레벨 12</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 8코인</div>
+                        <div class="stat">⏰ 시간: 60분</div>
+                        <div class="stat">💎 판매: 28-36코인</div>
+                        <div class="stat profit">📈 수익률: 350-450%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>중급 작물 중 안정적인 수익을 제공합니다. 성장 시간이 길지만 높은 판매가를 자랑합니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>시간 관리가 중요함</li>
+                            <li>자동화 시스템과 잘 맞음</li>
+                            <li>야간 재배에 적합</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plant-card" data-category="advanced" data-level="15" data-price="12" data-time="75" data-profit="400">
+                    <div class="plant-icon">🎃</div>
+                    <div class="plant-header">
+                        <h3>호박</h3>
+                        <span class="plant-level">레벨 15</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 12코인</div>
+                        <div class="stat">⏰ 시간: 75분</div>
+                        <div class="stat">💎 판매: 40-50코인</div>
+                        <div class="stat profit">📈 수익률: 300-400%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>큰 크기와 높은 판매가를 자랑하는 작물입니다. 할로윈 시즌에 특별 보너스가 있습니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>공간을 많이 차지함</li>
+                            <li>계절 이벤트 시 가격 상승</li>
+                            <li>장기 투자용으로 적합</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 희귀 작물 -->
+                <div class="plant-card" data-category="rare" data-level="20" data-price="15" data-time="60" data-profit="600">
+                    <div class="plant-icon">🍓</div>
+                    <div class="plant-header">
+                        <h3>딸기</h3>
+                        <span class="plant-level rare">레벨 20</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 15코인</div>
+                        <div class="stat">⏰ 시간: 60분</div>
+                        <div class="stat">💎 판매: 45-55코인</div>
+                        <div class="stat profit">📈 수익률: 200-300%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>새롭게 추가된 베리류 작물입니다. 높은 판매가와 아름다운 외관을 자랑합니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>특별한 재배 조건 필요</li>
+                            <li>고급 비료 사용 권장</li>
+                            <li>희귀도가 높아 컬렉션 가치</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plant-card" data-category="rare" data-level="25" data-price="20" data-time="75" data-profit="650">
+                    <div class="plant-icon">🫐</div>
+                    <div class="plant-header">
+                        <h3>블루베리</h3>
+                        <span class="plant-level rare">레벨 25</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 20코인</div>
+                        <div class="stat">⏰ 시간: 75분</div>
+                        <div class="stat">💎 판매: 60-75코인</div>
+                        <div class="stat profit">📈 수익률: 200-275%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>가장 비싼 베리류 작물입니다. 최고 레벨 플레이어를 위한 고급 작물입니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>최고 등급의 도구 필요</li>
+                            <li>완전 자동화 시스템 권장</li>
+                            <li>최고 수익을 위한 선택</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plant-card" data-category="rare" data-level="30" data-price="25" data-time="90" data-profit="500">
+                    <div class="plant-icon">🍉</div>
+                    <div class="plant-header">
+                        <h3>수박</h3>
+                        <span class="plant-level rare">레벨 30</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 25코인</div>
+                        <div class="stat">⏰ 시간: 90분</div>
+                        <div class="stat">💎 판매: 80-100코인</div>
+                        <div class="stat profit">📈 수익률: 220-300%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>가장 큰 크기의 작물입니다. 여름 시즌에 특별 보너스와 함께 최고의 판매가를 제공합니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>넓은 공간 필요 (2x2 크기)</li>
+                            <li>여름 시즌 가격 상승</li>
+                            <li>최고 레벨 도전 과제</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 계절 작물 -->
+                <div class="plant-card" data-category="seasonal" data-level="10" data-price="10" data-time="50" data-profit="400">
+                    <div class="plant-icon">🌻</div>
+                    <div class="plant-header">
+                        <h3>해바라기</h3>
+                        <span class="plant-level seasonal">여름 한정</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 10코인</div>
+                        <div class="stat">⏰ 시간: 50분</div>
+                        <div class="stat">💎 판매: 35-45코인</div>
+                        <div class="stat profit">📈 수익률: 250-350%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>여름에만 구매할 수 있는 특별한 작물입니다. 아름다운 노란 꽃과 함께 좋은 수익을 제공합니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>6-8월에만 구매 가능</li>
+                            <li>장식 효과도 뛰어남</li>
+                            <li>한정 기간 수집 아이템</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="plant-card" data-category="seasonal" data-level="5" data-price="8" data-time="45" data-profit="350">
+                    <div class="plant-icon">🌷</div>
+                    <div class="plant-header">
+                        <h3>튤립</h3>
+                        <span class="plant-level seasonal">봄 한정</span>
+                    </div>
+                    <div class="plant-stats">
+                        <div class="stat">💰 씨앗: 8코인</div>
+                        <div class="stat">⏰ 시간: 45분</div>
+                        <div class="stat">💎 판매: 25-35코인</div>
+                        <div class="stat profit">📈 수익률: 200-300%</div>
+                    </div>
+                    <div class="plant-description">
+                        <p>봄에만 구매할 수 있는 아름다운 꽃입니다. 다양한 색상으로 농장을 화려하게 꾸밀 수 있습니다.</p>
+                    </div>
+                    <div class="plant-tips">
+                        <h5>재배 팁:</h5>
+                        <ul>
+                            <li>3-5월에만 구매 가능</li>
+                            <li>색상별로 다른 가격</li>
+                            <li>봄 이벤트 시 보너스</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div class="ad-container">
+            <div class="ad-banner">AdSense 광고 위치 - 하단 배너</div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2024 로블록스 그로우 어 가든 가이드. 모든 권리 보유.</p>
+                <p>이 사이트는 Roblox Corporation과 공식적으로 연관되어 있지 않습니다.</p>
+                <div class="footer-legal mt-2">
+                    <a href="privacy-policy.html" class="text-white me-3">개인정보처리방침</a>
+                    <a href="terms-of-service.html" class="text-white me-3">서비스 이용약관</a>
+                    <a href="mailto:admin@gagrecipe.pro" class="text-white">문의하기</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="back-to-top" aria-label="맨 위로 이동">↑</button>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/cookie-consent.js"></script>
+    <script src="assets/js/plant-encyclopedia.js"></script>
+</body>
+</html>

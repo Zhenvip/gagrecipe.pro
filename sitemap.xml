@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" 
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        <loc>https://gagrecipe.pro/</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://gagrecipe.pro/assets/images/og-image.jpg</image:loc>
+            <image:title>로블록스 그로우 어 가든 가이드</image:title>
+            <image:caption>완벽한 공략 가이드</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gagrecipe.pro/beginner-guide.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://gagrecipe.pro/assets/images/beginner-guide-hero.jpg</image:loc>
+            <image:title>초보자 가이드</image:title>
+            <image:caption>게임 시작부터 첫 수익까지</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gagrecipe.pro/plant-encyclopedia.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://gagrecipe.pro/assets/images/plants/tomato.jpg</image:loc>
+            <image:title>식물 도감</image:title>
+            <image:caption>모든 식물 정보 완전판</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gagrecipe.pro/items-tools.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gagrecipe.pro/assets/images/items/sprinkler.jpg</image:loc>
+            <image:title>아이템 & 도구</image:title>
+            <image:caption>효율적인 농업 도구들</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gagrecipe.pro/tips-strategies.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+        <image:image>
+            <image:loc>https://gagrecipe.pro/assets/images/strategies-hero.jpg</image:loc>
+            <image:title>팁 & 전략</image:title>
+            <image:caption>고급 전략과 효율 팁</image:caption>
+        </image:image>
+    </url>
+    <url>
+        <loc>https://gagrecipe.pro/updates-news.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.7</priority>
+        <image:image>
+            <image:loc>https://gagrecipe.pro/assets/images/news-hero.jpg</image:loc>
+            <image:title>업데이트 & 뉴스</image:title>
+            <image:caption>최신 게임 소식</image:caption>
+        </image:image>
+    </url>
+    
+    <url>
+        <loc>https://gagrecipe.pro/privacy-policy.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <url>
+        <loc>https://gagrecipe.pro/terms-of-service.html</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    <!-- 섹션별 앵커 링크 -->
+    <url>
+        <loc>https://gagrecipe.pro/beginner-guide.html#getting-started</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://gagrecipe.pro/beginner-guide.html#first-farm</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+    <url>
+        <loc>https://gagrecipe.pro/tips-strategies.html#tomato-farming</loc>
+        <lastmod>2024-01-15</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+    </url>
+</urlset>
